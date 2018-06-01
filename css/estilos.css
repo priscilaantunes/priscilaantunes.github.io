@@ -88,10 +88,10 @@ SOBRE
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	text-align: center;
+	text-align: justify;
 	background-color: #6a06b0;
 	color: #F1F1F1;
-	padding: 90px;
+	padding: 80px 5px;
 }
 
 #sobre p, ul {
@@ -99,11 +99,13 @@ SOBRE
 	letter-spacing: 1px;
 	line-height: 23px;
 	text-align: center;
+	padding: 10px;
 }
 
 #sobre ul li {
 	list-style-type: none;
 	text-align: justify;
+	margin: 0;
 }
 
 #sobre .botao {
@@ -122,19 +124,30 @@ CONTATO
 */
 #contato {
 	display: flex;
-	flex-direction: column;
 	align-items: center;
 	text-align: center;
 	padding: 40px;
+	flex-wrap: wrap;
+	justify-content: space-around
+}
+
+#contato div{ 
+	display: flex;
+	flex-direction: row;;
+	max-width: 500px;
+	margin: 0 auto;
 }
 
 #contato h2 {
+	text-align: center;
 	margin-top: -15px;
 	margin-bottom: 30px;
+	width: 100%;
 }
 
 #contato p {
 	margin-bottom: -18px;
+	font-size: 15px;
 }
 /*
 RODAPÉ
@@ -183,46 +196,7 @@ MEDIA QUERIES
 		height: 30vh;
 		justify-content: center;
 		min-height: 250px;
-	}
-	/*
-	SERVIÇOS
-	*/
-
-	#servicos {
-		flex-direction: row;
-		flex-wrap: wrap;
-		align-items: flex-start;
-		max-width: 1000px;
-		margin: 0 auto;
-	}
-	
-	#servicos h2 {
-		text-align: center;
-		width: 100%;
-	}
-
-	#servicos div {
-		flex-grow: 1;
-		flex-basis: 150px;
-		padding: 0 10px;
-	}
-
-	/*
-	PORTFOLIO
-	*/
-	
-	#portfolio {
-		flex-direction: row;
-		flex-wrap: wrap;
-	}
-
-	#portfolio h2 {
-		width: 100%;
-		text-align: center;
-	}
-
-	#portfolio img {
-		width: 33.33%;
+		padding: 70px 180px;
 	}
 
 	/*
@@ -230,6 +204,7 @@ MEDIA QUERIES
 	*/
 
 	#contato {
+		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-around;
